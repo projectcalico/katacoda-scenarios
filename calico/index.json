@@ -62,6 +62,6 @@
     },
     "backend": {
         "port": 8080,
-        "imageid": "kubernetes"
+        "imageid": "calico"
     }
 }

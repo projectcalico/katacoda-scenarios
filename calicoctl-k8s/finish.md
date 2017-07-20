@@ -13,3 +13,9 @@ This included installing Project Calico, installing calicoctl, configuring calic
 
 #### *GET REWARDED FOR LEARNING*
 **Join our [MVP Program](https://www.projectcalico.org/mvp)**
+
+ &nbsp; 
+
+ &nbsp; 
+ 
+ 

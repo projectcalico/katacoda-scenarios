@@ -1,0 +1,69 @@
+{
+    "title": “Setup Advanced Policies using Calico on Kubernetes",
+    "description": "Learn how to setup Project Calico, install and use calicoctl, and setup ingress and egress policies.“,
+    "difficulty": “beginner”,
+    "time": “15-20 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - Install Calico",
+                "text": "step1.md"
+            },
+            {
+                "title": "Step 2 - Create Namespace and Enable Isolation”,
+                "text": "step2.md"
+            },
+            {
+                "title": "Step 3 - Setup and Expose Services“,
+                "text": "step3.md"
+            },
+            {
+                "title": "Step 4 - Test Connection“,
+                "text": "step4.md"
+            },
+            {
+                "title": "Step 5 - Install and Configure calicoctl“,
+                "text": "step4.md"
+            },
+            {
+                "title": "Step 6 - Review Namespace Profile“,
+                "text": "step6.md"
+            },
+            {
+                "title": "Step 7 - Define an Ingress Policy“,
+                "text": "step7.md"
+            },
+            {
+                "title": "Step 8 - Test the Connection“,
+                "text": "step8.md"
+            },
+            {
+                "title": "Step 9 - Prevent Outgoing Connections from Pods“,
+                "text": “step9 and0 - Test the Connection“,
+                "text": "step10.md"
+            }
+
+                    ],
+        "intro": {
+            "text": "intro.md",
+            "code": "set-env.sh",
+            "courseData": "courseBase.sh",
+            "credits": ""
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+          "host01": [
+          ]
+        }
+    },
+    "environment": {
+        "uilayout": "terminal",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+    },
+    "backend": {
+        "port": 8080,
+        "imageid": "calico"
+    }
+}

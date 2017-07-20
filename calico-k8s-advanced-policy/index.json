@@ -58,6 +58,9 @@
         },
         "assets": {
           "host01": [
+            {"target": "/root", "file": "nginx-network-policy.yaml"},
+            {"target": "/root", "file": "calico-policy-deny-egress.yaml"},
+            {"target": "/root", "file": "calico-policy-allow-dns.yaml"}
           ]
         }
     },

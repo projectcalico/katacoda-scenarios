@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: policy
+metadata:
+  name: advanced-policy-demo.allow-dns
+spec:
+  selector: has(calico/k8s_ns)
+  order: 400
+  egress:
+  - action: allow
+    protocol: udp
+    destination:
+      selector: calico/k8s_ns == 'kube-system' && k8s-app == 'kube-dns'
+      ports: [53]

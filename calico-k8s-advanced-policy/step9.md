@@ -1,8 +1,6 @@
 The next policy we will create will prevent all outgoing traffic from pods within the advanced-policy-demo namespace.
 
-Create this policy by running the following command:
-`
-calicoctl apply -f - <<EOF
+<pre class="file">
 apiVersion: v1
 kind: policy
 metadata:
@@ -14,14 +12,16 @@ spec:
   - action: deny
     destination:
       notSelector: calico/k8s_ns == 'advanced-policy-demo'
-EOF
+</pre>
+
+Create this policy by running the following command:
+`
+calicoctl apply -f calico-policy-deny-egress.yaml
 `{{execute}}
 
 Now let's create another policy that allows traffic to kube-dns.  You'll notice that the order of this policy is 400, whereas the order for the above policy is 500 - this is so that this new policy takes priority over the policy blocking ALL outgoing traffic.
 
-
-`
-calicoctl apply -f - <<EOF
+<pre class="file">
 apiVersion: v1
 kind: policy
 metadata:
@@ -35,7 +35,10 @@ spec:
     destination:
       selector: calico/k8s_ns == 'kube-system' && k8s-app == 'kube-dns'
       ports: [53]
-EOF
+</pre>
+
+`
+calicoctl apply -f calico-policy-allow-dns.yaml
 `{{execute}}
 
 You'll also notice this policy only allows outgoing traffic for a specific protocol and to a specific destination.

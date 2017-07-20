@@ -1,0 +1,56 @@
+{
+    "title": “Using calicoctl in Kubernetes”,
+    "description": "Learn how to install calicoctl and configure for use with either etcd or KDD.“,
+    "difficulty": "beginner",
+    "time": “5-10 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - Install Calico",
+                "text": "step1.md"
+            },
+            {
+                "title": "Step 2 - Install calicoctl",
+                "text": "step2.md"
+            },
+            {
+                "title": "Step 3 - Configure to use etcd“,
+                "text": "step3.md"
+            },
+            {
+                "title": “OR Configure to use KDD”,
+                "text": "step4.md"
+            },
+            {
+                "title": "Step 5 - Testing Configuration“,
+                "text": "step5.md"
+            },
+            {
+                "title": “Going Further”,
+                "text": "step6.md"
+            }
+
+                    ],
+        "intro": {
+            "text": "intro.md",
+            "code": "set-env.sh",
+            "courseData": "courseBase.sh",
+            "credits": ""
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+          "host01": [
+          ]
+        }
+    },
+    "environment": {
+        "uilayout": "terminal",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+    },
+    "backend": {
+        "port": 8080,
+        "imageid": "calico"
+    }
+}

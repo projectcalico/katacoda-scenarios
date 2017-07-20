@@ -1,6 +1,6 @@
-Congratulations!  You've successfully completed the **Advanced Policy** demo.
+Congratulations!  You've successfully completed the **Advanced Policy** tutorial.
 
-This included installing Project Calico, install calicoctl, and setting up isolation with ingress and egress policies.
+This included installing Project Calico, installing calicoctl, and setting up isolation with ingress and egress policies.
 
 **You can learn more about [Project Calico](https://www.projectcalico.org) visit the resources below:**
 

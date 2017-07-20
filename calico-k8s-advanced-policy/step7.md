@@ -1,6 +1,7 @@
 Now, let's create a NetworkPolicy which allows traffic to nginx pods from any pods in the advanced-policy-demo Namespace:
 
-```kubectl create -f - <<EOF
+<code class="execute">
+kubectl create -f - <<EOF
 kind: NetworkPolicy
 apiVersion: extensions/v1beta1
 metadata:
@@ -15,7 +16,7 @@ spec:
       - podSelector:
           matchLabels: {}
 EOF
-```{{execute}}
+</code>
 
 
 To verify the policy was appropriately applied, you can use *calicoctl* to get the policy, with its order and selectors:

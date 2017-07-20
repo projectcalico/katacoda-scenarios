@@ -23,7 +23,7 @@
             },
             {
                 "title": "Step 5 - Install and Configure calicoctl",
-                "text": "step4.md"
+                "text": "step5.md"
             },
             {
                 "title": "Step 6 - Review Namespace Profile",

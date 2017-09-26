@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: policy
+metadata:
+  name: advanced-policy-demo.deny-egress
+spec:
+  selector: calico/k8s_ns == 'advanced-policy-demo'
+  order: 500
+  egress:
+  - action: deny
+    destination:
+      notSelector: calico/k8s_ns == 'advanced-policy-demo'
